@@ -1,0 +1,112 @@
+[
+    {
+        "question": "What is debt?",
+        "options": [
+            "Money owed by one party to another",
+            "Money earned by one party from another",
+            "Money saved by one party for another",
+            "Money invested by one party in another"
+        ],
+        "correct_answer": 0,
+        "description": "Debt is something one party owes another, typically money."
+    },
+    {
+        "question": "What is the most common form of debt?",
+        "options": [
+            "Mortgages",
+            "Auto loans",
+            "Credit cards",
+            "Personal loans"
+        ],
+        "correct_answer": 2,
+        "description": "Credit cards are a common form of debt that provide revolving credit with no fixed end date."
+    },
+    {
+        "question": "What is secured debt?",
+        "options": [
+            "Debt that does not require collateral",
+            "Debt that requires collateral",
+            "Debt with a fixed end date",
+            "Debt with a revolving credit limit"
+        ],
+        "correct_answer": 1,
+        "description": "Secured debt is collateralized debt, where the borrower pledges something of value to back up the debt."
+    },
+    {
+        "question": "What is unsecured debt?",
+        "options": [
+            "Debt that does not require collateral",
+            "Debt that requires collateral",
+            "Debt with a fixed end date",
+            "Debt with a revolving credit limit"
+        ],
+        "correct_answer": 0,
+        "description": "Unsecured debt does not require collateral as security and is based on the borrower's creditworthiness."
+    },
+    {
+        "question": "What is revolving debt?",
+        "options": [
+            "Debt that does not require collateral",
+            "Debt that requires collateral",
+            "Debt with a fixed end date",
+            "Debt with a revolving credit limit"
+        ],
+        "correct_answer": 3,
+        "description": "Revolving debt provides the borrower with a line of credit that they can borrow from repeatedly."
+    },
+    {
+        "question": "What is a mortgage?",
+        "options": [
+            "Secured debt used to purchase real estate",
+            "Unsecured debt with no collateral",
+            "Debt with a fixed end date",
+            "Revolving debt with a credit limit"
+        ],
+        "correct_answer": 0,
+        "description": "A mortgage is a type of secured debt used to purchase real estate, such as a house or condo."
+    },
+    {
+        "question": "What are bonds?",
+        "options": [
+            "Unsecured debt",
+            "Secured debt",
+            "Short-term corporate debt",
+            "Debt instrument that allows borrowing from investors"
+        ],
+        "correct_answer": 3,
+        "description": "Bonds are a debt instrument that allow a company to borrow funds from investors by promising to repay the money with interest."
+    },
+    {
+        "question": "What is the legal definition of debt?",
+        "options": [
+            "Any obligation of a consumer to pay money",
+            "Any obligation of a consumer to receive money",
+            "Any obligation of a consumer to save money",
+            "Any obligation of a consumer to invest money"
+        ],
+        "correct_answer": 0,
+        "description": "The legal definition of debt is any obligation of a consumer to pay money arising out of a transaction."
+    },
+    {
+        "question": "What is the difference between debt and loan?",
+        "options": [
+            "Debt is money raised through bonds, while a loan is money lent by one party to another",
+            "Debt is money owed, while a loan is an agreement to lend money",
+            "Debt is money borrowed, while a loan is money saved",
+            "Debt is money invested, while a loan is money earned"
+        ],
+        "correct_answer": 1,
+        "description": "Debt is a broader term for money owed, while a loan is a specific agreement to lend money."
+    },
+    {
+        "question": "What is the difference between debt and credit?",
+        "options": [
+            "Debt is money owed, while credit is money earned",
+            "Debt is money borrowed, while credit is money saved",
+            "Debt is money owed, while credit is money available to borrow",
+            "Debt is money invested, while credit is money lent"
+        ],
+        "correct_answer": 2,
+        "description": "Debt is the amount of money owed, while credit is the amount of money available to borrow."
+    }
+]

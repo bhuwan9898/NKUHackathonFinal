@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz1.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Quiz related to debt.</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="play.html">Play here</a></li>
+          <li><a href="learn.html">Learn here.</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="quiz">
+    <div class="container" id = "play-quiz">
+      <h2>Question</h2><h2 id = "qsn-no"></h2>
+      <p id = "question"></p>
+      <form id = "my-form">
+        <input type="radio" id="1st" name="capital" value="">
+        <label for="1" id = "label1"></label><br>
+        <input type="radio" id="2nd" name="capital" value="">
+        <label for="2" id = "label2"></label><br>
+        <input type="radio" id="3rd" name="capital" value="">
+        <label for="3" id = "label3"></label><br>
+        <input type="radio" id="4th" name="capital" value="">
+        <label for="4" id = "label4"></label><br>
+        <br>
+        <div class="button-container">
+          <button id = "done">Check</button>
+          <button id = "next"> Next</button>
+          <button type="submit" id ="submit">Submit Quiz</button>
+        </div>
+        <div id = "check-answer"></div>
+        <div id = "description"></div>
+      </form>
+    </div>
+    <div id = "final-report"></div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+  let correctNumbers = 0;
+  let nextBtnCount = 0;
+  //let rightAnswer = '';
+  let answerDescription = '';
+  let category = 'debt';
+// Fetch the JSON data using Axios
+axios.get(`debt/${nextBtnCount}`)
+  .then(response => {
+      // Manipulate the data and render it in the HTML
+      questionAnswer = response.data;
+      console.log("JSON file received.");
+      
+      // Call generateQuestion after data is fetched
+      generateQuestion(questionAnswer, nextBtnCount);
+      //console.log(rightAnswer);
+  })
+  .catch(error => {
+      console.error('Error fetching JSON:', error);
+  });
+const answerDiv = document.getElementById('check-answer');
+const description = document.getElementById('description');
+const nextButton = document.getElementById('next');
+const submitButton = document.getElementById('submit');
+const checkButton = document.getElementById('done');
+nextButton.addEventListener('click', function(){
+  event.preventDefault();
+  //console.log("Next clicked")
+  description.innerText = '';
+  answerDiv.innerText = '';
+  document.getElementById('my-form').reset();
+  nextBtnCount++;
+  axios.get(`${category}/${nextBtnCount}`)
+  .then(response => {
+      // Manipulate the data and render it in the HTML
+      questionAnswer = response.data;
+      console.log("JSON file received.");
+      // Call generateQuestion after data is fetched
+      generateQuestion(questionAnswer, nextBtnCount);
+      //console.log(rightAnswer);
+  })
+  .catch(error => {
+      console.error('Error fetching JSON:', error);
+  });
+  
+});
+submitButton.addEventListener("click", function(){
+  
+  event.preventDefault();
+  console.log("submit clicked")
+  document.getElementById('play-quiz').innerHTML = '';
+
+  let finalAns = '';
+  if(correctNumbers<5){
+    finalAns = "Your performance was poor."
+    
+  }
+  else if(correctNumbers==5){
+    finalAns = "Your performance was average."
+    
+  }
+  else if(correctNumbers>5 && correctNumbers <=7){
+    finalAns = "Your performance was above average."
+    
+  }
+  else {
+    finalAns = "Your performance was excellent."
+    
+  }
+  document.getElementById('final-report').innerText = `${finalAns} You got ${correctNumbers} out of 10.`
+});
+checkButton.addEventListener('click', function(){
+  event.preventDefault();
+
+  axios.get(`debtAnswer/${nextBtnCount}`)
+  .then(response => {
+      // Manipulate the data and render it in the HTML
+      answerDescription = response.data;
+      console.log("Answer with description file received.");
+      console.log(answerDescription);
+      if(checkAnswer(answerDescription.answer))
+  {
+    answerDiv.style.color = '#408800';
+    answerDiv.innerText = "Correct Answer";
+  }
+  else
+  {
+    answerDiv.style.color = '#ff0000';
+    answerDiv.innerText = "Wrong Answer";
+  }
+  description.innerText = answerDescription.description;
+  })
+  .catch(error => {
+      console.error('Error fetching JSON:', error);
+  });
+});
+function generateQuestion(questionJSON, num){
+  console.log(num);
+  questionNumber = document.getElementById('qsn-no');
+  questionNumber.innerText = num+1;
+  const questionPlace = document.getElementById('question');
+  const option1 = document.getElementById('label1');
+  const option2 = document.getElementById('label2');
+  const option3 = document.getElementById('label3');
+  const option4 = document.getElementById('label4');
+  const value1 = document.getElementById('1st');
+  const value2 = document.getElementById('2nd');
+  const value3 = document.getElementById('3rd');
+  const value4 = document.getElementById('4th');
+  //console.log(questionArray);
+    questionPlace.innerText = questionJSON.question; 
+    option1.textContent = questionJSON.options['0'];
+    option2.textContent = questionJSON.options['1'];
+    option3.textContent = questionJSON.options['2'];
+    option4.textContent = questionJSON.options['3'];
+    value1.value = questionJSON.options['0'];
+    value2.value = questionJSON.options['1'];
+    value3.value = questionJSON.options['2'];
+    value4.value = questionJSON.options['3'];
+    if (num == 9){
+      console.log("question 10 reached");
+      nextButton.style.display = 'none';
+      submitButton.style.display = 'block';
+    }
+}
+function checkAnswer(correctAnswer) {//1
+    var radios = document.getElementsByName('capital');
+    for (var i = 0; i < radios.length; i++) {
+      console.log(radios[i].checked);
+        if (radios[i].checked ){
+          if (parseInt(correctAnswer) ==i){
+            correctNumbers++;
+            return true;
+        }
+      }
+    }  
+}
+
+</script>
+</body>
+</html>

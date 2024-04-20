@@ -1,0 +1,112 @@
+[
+    {
+        "question": "What is a budget?",
+        "options": [
+            "A plan for spending money over a specified future period of time",
+            "A plan for saving money over a specified future period of time",
+            "A plan for investing money over a specified future period of time",
+            "A plan for donating money over a specified future period of time"
+        ],
+        "correct_answer": 0,
+        "description": "A budget is a plan for spending money over a specified future period of time, including revenue and expenses."
+    },
+    {
+        "question": "What is the purpose of budgeting?",
+        "options": [
+            "To restrict spending and limit financial freedom",
+            "To track how much money you earn and spend",
+            "To avoid saving money for the future",
+            "To increase debt and financial instability"
+        ],
+        "correct_answer": 1,
+        "description": "Budgeting helps individuals track how much money they earn and spend, allowing for better financial control and planning."
+    },
+    {
+        "question": "What is a surplus budget?",
+        "options": [
+            "A budget where expenses exceed revenues",
+            "A budget where revenues exceed expenses",
+            "A budget where revenues equal expenses",
+            "A budget where no money is spent"
+        ],
+        "correct_answer": 1,
+        "description": "A surplus budget is one where revenues exceed expenses, indicating anticipated profits."
+    },
+    {
+        "question": "What is a balanced budget?",
+        "options": [
+            "A budget where expenses exceed revenues",
+            "A budget where revenues exceed expenses",
+            "A budget where revenues equal expenses",
+            "A budget where no money is spent"
+        ],
+        "correct_answer": 2,
+        "description": "A balanced budget is one where revenues equal expenses, indicating financial stability."
+    },
+    {
+        "question": "What is a deficit budget?",
+        "options": [
+            "A budget where expenses exceed revenues",
+            "A budget where revenues exceed expenses",
+            "A budget where revenues equal expenses",
+            "A budget where no money is spent"
+        ],
+        "correct_answer": 0,
+        "description": "A deficit budget is one where expenses exceed revenues, indicating financial losses."
+    },
+    {
+        "question": "What is the first step in creating a budget?",
+        "options": [
+            "Set financial goals",
+            "Calculate total income",
+            "Track spending",
+            "Identify debt payments"
+        ],
+        "correct_answer": 1,
+        "description": "The first step in creating a budget is to calculate total income, including all sources of revenue."
+    },
+    {
+        "question": "What is the purpose of setting financial goals in a budget?",
+        "options": [
+            "To increase debt",
+            "To track spending",
+            "To avoid saving money",
+            "To have a clear objective for financial planning"
+        ],
+        "correct_answer": 3,
+        "description": "Setting financial goals in a budget provides a clear objective for financial planning and helps individuals prioritize their spending."
+    },
+    {
+        "question": "What is the purpose of identifying debt payments in a budget?",
+        "options": [
+            "To increase debt",
+            "To track spending",
+            "To avoid saving money",
+            "To understand and manage existing debt obligations"
+        ],
+        "correct_answer": 3,
+        "description": "Identifying debt payments in a budget helps individuals understand and manage their existing debt obligations, leading to better financial planning."
+    },
+    {
+        "question": "What is the purpose of making a spending plan in a budget?",
+        "options": [
+            "To increase debt",
+            "To track spending",
+            "To avoid saving money",
+            "To allocate income to different expenses and goals"
+        ],
+        "correct_answer": 3,
+        "description": "Making a spending plan in a budget helps individuals allocate their income to different expenses and goals, ensuring financial resources are used effectively."
+    },
+    {
+        "question": "Why is it important to adjust your budget each month?",
+        "options": [
+            "To increase debt",
+            "To track spending",
+            "To avoid saving money",
+            "To adapt to changing financial circumstances and goals"
+        ],
+        "correct_answer": 3,
+        "description": "Adjusting your budget each month is important to adapt to changing financial circumstances and goals, ensuring continued financial stability and success."
+    }
+]

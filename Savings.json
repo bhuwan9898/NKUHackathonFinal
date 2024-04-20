@@ -1,0 +1,112 @@
+[
+    {
+        "question": "What are savings?",
+        "options": [
+            "Money left over after spending and other obligations",
+            "Money spent on consumption",
+            "Money invested in risky assets",
+            "Money borrowed from a bank"
+        ],
+        "correct_answer": 0,
+        "description": "Savings refer to the money left over after spending and other obligations have been deducted, representing a net surplus of funds."
+    },
+    {
+        "question": "Where are savings typically kept?",
+        "options": [
+            "Under the mattress",
+            "In a checking account",
+            "In a high-yield savings account",
+            "In the form of cash or bank deposits"
+        ],
+        "correct_answer": 3,
+        "description": "Savings are typically kept in the form of cash or cash equivalents, such as bank deposits, which are exposed to no risk of loss."
+    },
+    {
+        "question": "What is the purpose of savings?",
+        "options": [
+            "To spend on consumption",
+            "To invest in risky assets",
+            "To grow wealth",
+            "To have funds left over for emergencies or future goals"
+        ],
+        "correct_answer": 3,
+        "description": "The purpose of savings is to have funds left over for emergencies, future goals, or aspirations such as retirement or education."
+    },
+    {
+        "question": "What is the average personal savings rate in the U.S.?",
+        "options": [
+            "1%",
+            "5%",
+            "10%",
+            "15%"
+        ],
+        "correct_answer": 1,
+        "description": "The average personal savings rate in the U.S. is 5%, indicating the percentage of disposable personal income that is saved rather than spent."
+    },
+    {
+        "question": "What is the main difference between savings and investing?",
+        "options": [
+            "Savings involve putting money at risk, while investing is safe",
+            "Savings are used for short-term goals, while investing is for long-term goals",
+            "Savings are safe from potential loss, while investing involves risk",
+            "Savings offer higher returns than investing"
+        ],
+        "correct_answer": 2,
+        "description": "The main difference is that savings are by definition safe from any potential loss, while investing involves putting money at risk for potential returns."
+    },
+    {
+        "question": "What is the purpose of a savings account?",
+        "options": [
+            "To earn high returns",
+            "To keep money safe and easily accessible",
+            "To invest in stocks and bonds",
+            "To lock up money for a certain period"
+        ],
+        "correct_answer": 1,
+        "description": "The purpose of a savings account is to keep money safe and easily accessible, offering a modest interest rate while maintaining liquidity."
+    },
+    {
+        "question": "How can you maximize earnings from a savings account?",
+        "options": [
+            "By keeping money under the mattress",
+            "By shopping around for the best rates",
+            "By investing in risky assets",
+            "By withdrawing funds frequently"
+        ],
+        "correct_answer": 1,
+        "description": "You can maximize earnings by shopping around for the best rates, especially from online banks that offer higher returns on savings accounts."
+    },
+    {
+        "question": "What is the federal insurance limit for savings accounts?",
+        "options": [
+            "$100,000",
+            "$250,000",
+            "$500,000",
+            "$1,000,000"
+        ],
+        "correct_answer": 1,
+        "description": "The Federal Deposit Insurance Corporation (FDIC) provides insurance of up to $250,000 per depositor per institution for savings accounts."
+    },
+    {
+        "question": "What is the recommended amount to keep in an emergency fund?",
+        "options": [
+            "1 month of expenses",
+            "3-6 months of living expenses",
+            "1 year of income",
+            "No savings needed for emergencies"
+        ],
+        "correct_answer": 1,
+        "description": "Financial advisors typically recommend holding enough savings to cover at least three to six months' living expenses as an emergency fund."
+    },
+    {
+        "question": "How do you open a savings account?",
+        "options": [
+            "By visiting a bank branch with ID and cash",
+            "By mailing a cancellation request form",
+            "By calling the bank to close an account",
+            "By withdrawing all funds from a checking account"
+        ],
+        "correct_answer": 0,
+        "description": "You can open a savings account by visiting a bank branch with your government-issued ID and any cash or checks you wish to deposit."
+    }
+]

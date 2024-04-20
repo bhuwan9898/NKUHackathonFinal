@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What is income?",
+        "options": ["Money spent on products", "Money received in exchange for labor or products", "Money saved in a bank account", "Money borrowed from a friend"],
+        "correct_answer": 1,
+        "description": "Income is the money you receive in exchange for your labor or products, it is not money spent, saved, or borrowed."
+    },
+    {
+        "question": "What are some examples of income for most people?",
+        "options": ["Revenue from selling products", "Return on investments", "Wages and salaries", "Money borrowed from a bank"],
+        "correct_answer": 2,
+        "description": "For most people, income includes wages and salaries, along with returns on investments and other receipts."
+    },
+    {
+        "question": "How do businesses generate income?",
+        "options": ["By borrowing money from banks", "By selling services and products", "By saving money in a bank account", "By investing in stocks"],
+        "correct_answer": 1,
+        "description": "Businesses generate income by selling services, products, and receiving interest and dividends related to their cash accounts."
+    },
+    {
+        "question": "What do economists focus on when defining income?",
+        "options": ["Earnings, savings, and consumption", "Public finance and capital investment", "Production and labor", "All of the above"],
+        "correct_answer": 0,
+        "description": "Economists focus on earnings, savings, and consumption when defining income, among other topics."
+    }
+]

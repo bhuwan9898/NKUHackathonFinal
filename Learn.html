@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- Code by Keyframe Effects -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="learn.css">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" />
+    <style>
+        .options {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .topic {
+            flex-basis: calc(50% - 20px);
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #007d34;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .topic {
+                flex-basis: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            
+            <nav class="navbar container">
+                <a href="#" class="brandlogo"><img src="b.png" /></a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <div class="menu" id="menu">
+                    <ul class="menu-inner">
+                        <li class="menu-item"><a href="home.html" class="menu-link">HOME</a></li>
+                        <li class="menu-item"><a href="play.html" class="menu-link">PLAY QUIZ</a></li>
+                        <li class="menu-item"><a href="Learn.html" class="menu-link">LEARN HERE</a></li>
+                        <li class="menu-item"><a href="support.html" class="menu-link">SUPPORT</a></li>
+                    </ul>
+                </div>
+                <a href="https://www.fidelity.com/learning-center/overview" class="menu-block">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="section banner banner-section">
+            <div class="container banner-column">
+                <div class="banner-links">
+                    <a href="#" title=""><i class="fa fa-facebook-f"></i></a>
+                    <a href="#" title=""><i class="fa fa-twitter"></i></a>
+                    <a href="#" title=""><i class="fa fa-instagram"></i></a>
+                    <a href="#" title=""><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="learn-more">
+            <h2>Learn More About Financial Literacy</h2>
+            <p>Here you can find resources and information to improve your financial knowledge.</p>
+            <p>Start by exploring these topics:</p>
+
+            <div class="options">
+                <a href="saving.html" class="topic" id="saving">
+                    <h3>Saving Money</h3>
+                    <p>This section provides tips and strategies for saving money effectively.</p>
+                </a>
+                <a href="budgeting.html" class="topic" id="budgeting">
+                    <h3>Budgeting</h3>
+                    <p>Learn how to create and maintain a budget to manage your finances better.</p>
+                </a>
+                <a href="investing.html" class="topic" id="investing">
+                    <h3>Investing</h3>
+                    <p>Discover the basics of investing and how to make informed investment decisions.</p>
+                </a>
+                <a href="debt-management.html" class="topic" id="debt-management">
+                    <h3>Debt Management</h3>
+                    <p>Learn how to effectively manage and reduce your debt.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script  src="home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+
+:root {
+  --color: rgb(63 63 63);
+}
+
+
+
+.parallax-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+
+  background-image: url(https://media.istockphoto.com/id/1312767508/photo/businessman-using-tablet-online-banking-exchange-currency-and-payment-digital-marketing.webp?b=1&s=170667a&w=0&k=20&c=PKA6BHHo3MQFYlVwlx9BKTxNXiJ5cEzbewXHqpG2joM=);
+  background-position: center;
+  background-size: cover;
+  color: var(--color);
+  row-gap: 4rem;
+
+  text-align: center;
+}
+
+.buffer {
+  width: 100%;
+  min-height: auto;
+  background-color: black;
+  color: aliceblue;
+}
+
+.parallax-container2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 6rem 0;
+  background-image: url(https://i.pinimg.com/736x/b6/6b/b2/b66bb26b328aaebcf3caada0a6c97d5f.jpg);
+  gap: 1.6em;
+}
+
+
+
+p {
+
+  padding: 1em;
+  line-height: 1.5;
+  color: white;
+}
+
+
+
+h3 {
+  margin-top: 1em;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  max-width: 320px;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 1rem;
+  border-radius: 0.5em;
+
+  background-color: white;
+  box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+}
+
+.card p{
+    color: black;
+}
+
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.3em;
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-of-type(1) .card-img {
+  background-image: url(https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxlYXJuaW5nfGVufDB8fDB8fHww);
+}
+
+.card:nth-of-type(2) .card-img {
+  background-image: url(https://www.shutterstock.com/image-vector/template-mobile-application-interface-quiz-260nw-2183926059.jpg);
+}
+
+.card:nth-of-type(3) .card-img {
+  background-image: url(https://media.licdn.com/dms/image/C5112AQEBRUQKcA1I4A/article-cover_image-shrink_720_1280/0/1529730717793?e=2147483647&v=beta&t=m_9N7anXnl2n47coKwBjUuWFn3CSkQkE6lg9_swhdrI);
+}
+
+.card:nth-of-type(4) .card-img {
+  background-image: url(https://wallpapercave.com/wp/wp8089618.png);
+}
